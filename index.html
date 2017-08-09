@@ -1,0 +1,193 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#webDesignContainer1").hide();
+    $("#webDesignContainer2").hide();
+    $("#webDesignContainer3").hide();
+
+    });
+
+    function hideShow(value){
+       console.log(value);
+       $(value).toggle(700);
+    }
+    </script>
+    <style>
+        hr{
+            color:#E0E0E0;
+        }
+        a{
+        text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-xs-12" style="background-color:aqua">
+            <div class="col-xs-4 h3">Logo</div>
+            <div class="col-xs-2 "><a class="h4" href="#home" style="text-decoration:none;">Home</a></div>
+            <div class="col-xs-2 "><a class="h4" href="#about" style="text-decoration:none;">About Us</a></div>
+            <div class="col-xs-2 "><a class="h4" href="#service" style="text-decoration:none;">Services</a></div>
+            <div class="col-xs-2 "><a class="h4" href="#contact" style="text-decoration:none;">Contact</a></div>
+        </div>
+        <div class="col-xs-12" style="background-color:#F6F6F6" id="home">
+            <div id="myCarousel" class="carousel slide col-md-10 col-md-offset-1" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="food.jpg" alt="Los Angeles" style="width:100%; height:350px">
+                    </div>
+
+                    <div class="item">
+                        <img src="food.jpg" alt="Chicago" style="width:100%; height:350px">
+                    </div>
+
+                    <div class="item">
+                        <img src="food.jpg" alt="New york" style="width:100%; height:350px">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-12" id="about">
+            <div class="col-md-5 col-md-offset-4" style="margin-bottom:50px;">
+                <h2 style="text-align:center ; font-weight : bold">About us</h2>
+                <hr/>
+                <p class="text-primary"> Hello my name is umang kesari and i am working in knoldus</p>
+            </div>
+
+
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-5">
+                <label style="background-color:black; color:white; width:100%">Web Design <button onclick="hideShow('#webDesignContainer1');" class="btn btn-primary" id="webDesign" style="float:right"> > </button> </label>
+                <div id="webDesignContainer1">
+                    <p>What i can do in this</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="col-xs-5">
+                <label style="background-color:black; color:white; width:100%">Web Design <button onclick="hideShow('#webDesignContainer2');" class="btn btn-primary" id="webDesign" style="float:right"> > </button> </label>
+                <div id="webDesignContainer2">
+                    <p>What i can do in this</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-5">
+                <label style="background-color:black; color:white; width:100%">Web Design <button onclick="hideShow('#webDesignContainer3');" class="btn btn-primary" id="webDesign" style="float:right"> > </button> </label>
+                <div id="webDesignContainer3">
+                    <p>What i can do in this</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="background-color:#E0E0E0" id="service">
+            <div class="col-md-5 col-md-offset-4" >
+                <h2 style="text-align:center">Services</h2>
+                <hr/>
+                <p class="text-primary"> Hello my name is umang kesari and i am working in knoldus</p>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-xs-3">
+                    <img src="zoon.png" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Fully Responsive</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+            </div>
+        </div>
+            <div class="col-xs-12" style="margin-top:50px">
+                <div class="col-xs-4">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-xs-4">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-xs-4">
+                    <img src="minnion.jpg" alt="smallFood" class="img-circle" style="margin-left:20%"><br>
+                    <label class="h3 text-primary"> Retina Ready</label><br>
+                    <span class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+
+            </div>
+            <div class="col-xs-12" style="background-color:#F0F0F0" id="contact">
+                <div class="col-xs-6 h2">Fully Responsive</div>
+                <div class="form-group col-xs-6">
+                    <h2 style="text-align:center">Drop Your Message</h2>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" class="form-control" placeholder="Your Subject">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-4">About Us</div>
+                <div class="col-xs-4">PhotoGallery</div>
+                <div class="col-xs-4">NewsLetter Registration</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
